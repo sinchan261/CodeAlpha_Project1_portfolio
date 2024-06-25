@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculate.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Calculator using HTML, CSS & JS</h1>
+    <div class="container flex flex_col">
+        <div class="row">
+            <input id="display" class="input" type="text" readonly>
+        </div>
+        <div class="row">
+            <button class="button" value="C">C</button>
+            <button class="button" value="100">100</button>
+            <button class="button" value="1000">1000</button>
+            <button class="button" data-set="eq" value="%">%</button>
+        </div>
+        <div class="row">
+            <button class="button" value="7">7</button>
+            <button class="button" value="8">8</button>
+            <button class="button" value="9">9</button>
+            <button class="button" data-set="eq" value="*">x</button>
+        </div>
+        <div class="row">
+            <button class="button" value="4">4</button>
+            <button class="button" value="5">5</button>
+            <button class="button" value="6">6</button>
+            <button class="button" data-set="eq" value="-">-</button>
+        </div>
+        <div class="row">
+            <button class="button" value="1">1</button>
+            <button class="button" value="2">2</button>
+            <button class="button" value="3">3</button>
+            <button class="button" data-set="eq" value="+">+</button>
+        </div>
+        <div class="row">
+            <button class="button" value="0">0</button>
+            <button class="button" data-set="eq" value=".">.</button>
+            <button class="button" data-set="eq" value="=">=</button>
+            <button class="button" data-set="eq" value="/">/</button>
+        </div>
+    </div>
+    <script src="calculate.js"></script>
+</body>
+</html>

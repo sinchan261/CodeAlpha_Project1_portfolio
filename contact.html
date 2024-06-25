@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #212121;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+        }
+
+        .input {
+            background-color: rgb(55, 53, 53);
+            border: none;
+            border-radius: 5px;
+            padding: 9px;
+            margin: 15px 0;
+            color: white;
+            width:99%;
+        }
+
+        #name {
+            margin-top: 25px;
+        }
+
+        #feedback {
+            height: 100px;
+            padding: 30px;
+        }
+
+        button {
+            padding: 15px;
+            width: 50%;
+            text-align: center;
+            background-color: orangered;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+            align-self: center;
+        }
+
+        #left {
+            width: 45%;
+        }
+
+        #right {
+            width: 45%;
+        }
+
+        #contact {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 60px;
+        }
+
+        .fa-solid {
+            color: orangered;
+            margin: 6px;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        #left-child {
+            margin-left: 20px;
+        }
+        #left{
+            margin-top:40px;
+        }
+        #right{
+            margin-top:40px;  
+        }
+        #link{
+            margin: 70px 0px 0px 50px;
+            font-size:30px;
+        }
+.fa-brands{
+    color:orangered;
+    margin:5px
+}
+#button{
+    margin-top: 20px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.but:hover{
+background-color: black;
+transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+cursor:pointer
+}
+    </style>
+</head>
+<body>
+    <main id="main">
+        <div id="left">
+            <div id="left-child">
+                <p id="contact">Contact Me</p>
+                <p><i id="emai"class="fa-solid fa-envelope"></i>Email: gsaikat261@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>Tel No: 8388911326</p>
+            </div>
+            <p id="link">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </p>
+            <button class="but"id="button">Download My CV</button>
+        </div>
+        <div id="right">
+            <form id="form">
+                <input type="text" placeholder="Your Name" id="name" class="input">
+                <input type="email" placeholder="Your Email" id="email" class="input">
+                <textarea placeholder="Your feedback" id="feedback" class="input"></textarea>
+                <button type="submit" id="button">Submit</button>
+            </form>
+        </div>
+       
+    </main>
+</body>
+</html>

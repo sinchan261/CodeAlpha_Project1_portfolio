@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        body {
+            font-family: 'Noto Sans', sans-serif;
+        }
+        #parent {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+        #left_child {
+            width: 50%;
+            background-image: url("./img2.jpg");
+            background-size: cover;
+            overflow: hidden;
+        }
+        #right_child {
+            width: 50%;
+            background-color: #212121;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        #about {
+            font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 30px;
+            color: orangered;
+        }
+        #headline {
+            width: 100%;
+            height: 2px;
+            background-color: orangered;
+            margin: 20px auto;
+            border: none;
+        }
+        #intro, #aim, #programming, #webdevelopment, #problemsolving {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        #programming, #webdevelopment, #problemsolving {
+            margin-top: 20px;
+            font-weight: bold;
+            color: red;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.2rem;
+        }
+        #language {
+            margin-top: 8px;
+        }
+        .fa-brands {
+            margin-top: 10px;
+            margin-left: 20px;
+            color: orange;  
+            font-size: 20px;
+        }
+        #programming-fa_brands{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <main id="parent">
+        <div id="left_child">
+            <!-- Left content, if any -->
+        </div>
+        <div id="right_child">
+            <div id="about">ABOUT ME</div>
+            <hr id="headline">
+            <p id="intro">
+                Hi, my name is Saikat Sinchan Ghosh. I completed my secondary education with an 80% score and my higher secondary education from the West Bengal Board with a 73% score. My interest in computers began in childhood, which led me to pursue a B.Tech in Computer Science.
+            </p>
+            <p id="aim">
+                Passionate about coding and problem-solving, I aim to apply my skills to solve real-world challenges. Dedicated to continuous learning in computer science, I have experience in multiple programming languages. I enjoy tackling projects that push my abilities and believe in making a lasting impact through innovation. My goal is to create solutions that drive technological progress and improve lives.
+            </p>
+            <div id="programming-language">
+                <div id="programming">Programming Knowledge</div>
+                <p id="language">C | C++ | Python | JavaScript</p>
+            </div>
+            <div id="webdevelopment">
+                <div id="programming">Web Development</div>
+                <p id="language">HTML | CSS | JavaScript</p>
+            </div>
+            <div id="problemsolving">
+                <div id="programming">Problem Solving</div>
+                <p id="language">Data Structures and Algorithms</p>
+            </div>
+            <div id="moreinfo">
+                <p id="programming-fa_brands">More info:</p>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

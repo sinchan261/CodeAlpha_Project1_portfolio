@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            list-style: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        background-color: #212121;
+        color:white;
+        }
+       .main-nav{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+       
+       }
+       .right{
+        width:50%;
+        margin-left: 10px;
+        background-color: rgb(230, 20, 20);
+        padding:9px;
+        margin-top: 5px;
+        border-radius: 5px;
+        width:50px;
+        font-weight: bold;
+       }
+        .left-nav{
+            display:flex;
+            justify-content: space-evenly;
+            margin-top: 10px;
+            margin-right: 20px;
+width:50%;
+
+
+        }
+        .left-side-nav{
+            margin-left: 30px;
+            padding:2px;
+            transition: background-color 0.3s ease;
+             
+            border-radius:5px ;/* background-color: grey;Light Grey */
+        }
+        .left-side-nav:hover{
+    background-color:red;
+    border-radius:5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+    
+}
+        .left-side-icon{
+            margin-left: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .fa-brands{
+            margin-right:5px;
+            color: rgb(230, 20, 20);
+           
+        }
+        .left-main{
+            display: flex;
+            flex-direction: column ;
+            justify-content: space-between;
+            margin-top: 70px;
+         margin-left: 20px;
+
+        }
+        .name{
+            font-size: 20px;
+        }
+
+.proff{
+font-family: fantasy;
+font-size: 60px;
+}
+.message{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+}
+#container{
+    display: flex;
+    
+    justify-content: space-between;
+}
+.proff-parent{
+    margin-top: 8px;
+}
+#container{
+  margin-left: 5px;
+}
+.image{
+    width:300px;
+    border-radius: 2px;
+}
+.right-main{
+    margin-top:70px;
+    margin-right:300px;
+
+}
+.left-main{
+    margin-left: 30px;
+}
+a{
+    text-decoration: none;
+    padding:10px;
+}
+#button{
+    line-height: 1.5;
+    padding:15px;
+ border-radius: 5px;
+ border:none;
+ background-color:red ;
+ margin-top: 10px;
+ cursor:pointer
+}
+#button:hover{
+background-color: black;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="main-nav">
+        <ul >
+            <li class="right">logo</li>
+        </ul>
+        <ul class="left-nav">
+            <li onclick="setTimeout(function(){ window.location.href = 'fontpage.html'; }, ); return false;" class="left-side-nav" >Home</li>
+            <li  onclick="setTimeout(function(){ window.location.href = 'project.html'; },); return false;"class="left-side-nav">Project</li>
+            <li  onclick="setTimeout(function(){ window.location.href = 'empty.html'; }, ); return false;"class="left-side-nav">About</li>
+            
+            <li  onclick="setTimeout(function(){ window.location.href = 'contact.html'; }, ); return false; "class="left-side-nav">Contacts</li>
+            <li class="left-side-icon">
+            <i class="left-side fa-brands fa-linkedin"></i>
+            <i class="left-side  fa-brands fa-github"></i>
+        </li>
+        </ul>
+    </nav>
+</header>
+<main id="container">
+
+    <div class="left-main">
+<p class="name">HI,I'M SAIKAT SINCHAN GHOSH</p>
+<p class="proff-parent">
+<p class="proff"> I'M A FRONTEND </p>
+<p class="proff"> DEVELOPER</p>
+</p>
+<p class="message"> Hi my name is saikat sinchan ghosh <br>
+I came from kolkata.i studying btech in <br>sister  nivedita university
+i am a btech second<br> year student 
+
+</p>
+<button id="button" onclick="setTimeout(function(){ window.location.href = 'Project.html'; }, ); return false; "> View My Project</button>
+    </div>
+    <div class="right-main">
+        <img class="image" src="img.jpg" alt="Profile Image">
+
+    </div>
+ </main>
+
+ </body>
+</html>
